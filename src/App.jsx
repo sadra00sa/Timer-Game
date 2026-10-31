@@ -6,7 +6,7 @@ function App() {
     <main className="mx-auto max-w-4xl px-5 py-10 sm:py-16">
       <header className="mb-10">
         <h1 className="font-display text-5xl font-black leading-[0.95] tracking-tight sm:text-7xl">
-          On the dot
+          Timer Game
         </h1>
         <p className="mt-5 max-w-md text-lg leading-relaxed text-ink/75">
           Start a lane, then stop the clock the moment you think time is up.
