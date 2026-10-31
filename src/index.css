@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Unbounded", "Vazirmatn", system-ui, sans-serif;
+  --font-sans: "Figtree", "Vazirmatn", system-ui, sans-serif;
+
+  --color-chalk: #eceef3;
+  --color-ink: #12163a;
+  --color-cobalt: #2a3cff;
+  --color-signal: #ffd93b;
+  --color-flare: #ff5b4d;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--color-chalk);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Moving barber-pole stripes on the lane that is currently running */
+.lane-live {
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.12) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.12) 50%,
+    rgba(255, 255, 255, 0.12) 75%,
+    transparent 75%
+  );
+  background-size: 40px 40px;
+  animation: lane-stripes 1s linear infinite;
+}
+
+@keyframes lane-stripes {
+  to {
+    background-position: 40px 0;
+  }
+}
+
+/* Result dialog entrance */
+dialog[open] {
+  animation: dialog-pop 0.3s cubic-bezier(0.2, 0.9, 0.3, 1.2);
+}
+
+@keyframes dialog-pop {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.96);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lane-live,
+  dialog[open] {
+    animation: none;
+  }
+}
