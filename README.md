@@ -1,16 +1,87 @@
-# React + Vite
+# On the Dot
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A reaction-based timing game built with **React** and **Vite**.
 
-Currently, two official plugins are available:
+Think you have a good sense of time? Start the timer, estimate when the target time is up, and stop it as close to the target as possible. The closer you get, the higher your score!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 **[Live Demo](https://sadra00sa.github.io/Timer-Game/)**
 
-## React Compiler
+## Preview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+![On the Dot - Game Preview](./screenshot.png)
 
-## Expanding the ESLint configuration
+## About the Game
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+On the Dot is a simple but challenging timing game where players test their ability to estimate time without relying on a visible countdown.
+
+Choose a difficulty level, start the challenge, and stop the timer when you think the target time has passed.
+
+Accuracy is everything!
+
+## Game Rules
+
+- Choose one of four difficulty levels.
+- Start the timer and try to estimate when the target time is up.
+- Stop the timer as close to the target as possible.
+- The closer your timing, the higher your score.
+- Going more than 2 seconds past the target results in a loss.
+
+## Difficulty Levels
+
+| Level | Target Time |
+|---|---:|
+| Fast | 1 Second |
+| Easy | 5 Seconds |
+| Normal | 10 Seconds |
+| Hard | 15 Seconds |
+
+## Features
+
+- Four difficulty levels.
+- Interactive timer challenges.
+- Accuracy-based scoring system.
+- Player name input.
+- Real-time timer status.
+- Simple and clean user interface.
+
+## Built With
+
+- React
+- JavaScript
+- Vite
+- CSS
+- HTML
+
+## Getting Started
+
+To run this project locally:
+
+**1. Clone the repository**
+
+```bash
+git clone https://github.com/sadra00sa/Timer-Game.git
+```
+
+**2. Navigate to the project directory**
+
+```bash
+cd Timer-Game
+```
+
+**3. Install dependencies**
+
+```bash
+npm install
+```
+
+**4. Start the development server**
+
+```bash
+npm run dev
+```
+
+Open the local URL provided by Vite in your browser.
+
+---
+
+**Developed by [Sadra Salehi](https://github.com/sadra00sa)**
